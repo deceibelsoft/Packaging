@@ -1,0 +1,147 @@
+﻿
+@{
+    ViewBag.Title = "DashBoard";
+    Layout = "~/Views/Shared/_Master.cshtml";
+}
+<div class="row">
+    <div class="main-header">
+        <h4>Dashboard</h4>
+    </div>
+</div>
+<!-- 4-blocks row start -->
+<div class="row m-b-30 dashboard-header">
+    <!-- start tab-pane of project tab -->
+    <div class="tab-pane" id="project" role="tabpanel">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-header-text">Employee Information</h5>
+                <button type="button" class="btn btn-primary waves-effect waves-light f-right">
+                    + ADD EMPLOYEE
+                </button>
+            </div>
+            <!-- end of card-header  -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="project-table">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center txt-primary pro-pic">Photo</th>
+                                        <th class="text-center txt-primary">Employee Name</th>
+                                        <th class="text-center txt-primary">Gross Salary</th>
+                                        <th class="text-center txt-primary">Department</th>
+                                        <th class="text-center txt-primary">Package Status</th>
+                                        <th class="text-center txt-primary">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-center">
+                                    <tr>
+                                        <td>
+                                            <img src="assets/images/avatar-2.png" class="img-circle" alt="tbl">
+                                        </td>
+                                        <td>Web Consultant</td>
+                                        <td>Oct 25th, 2014</td>
+                                        <td>Oct 25th, 2015</td>
+                                        <td class="text-center">
+                                            <span class="label label-success m-t-20">Finish</span>
+                                        </td>
+                                        <td class="faq-table-btn">
+                                            <button type="button" class="btn btn-primary waves-effect waves-light" onclick="location.href='@Url.Action("Index","Employee")'" data-toggle="tooltip" data-placement="top" title="Edit">
+                                                <i class="icofont icofont-ui-edit"></i>
+                                            </button> 
+                                            <button type="button" class="btn btn-danger waves-effect waves-light"  data-toggle="tooltip" data-placement="top" title="Delete">
+                                                <i class="icofont icofont-ui-delete"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/images/avatar-2.png" class="img-circle" alt="tbl">
+                                        </td>
+                                        <td>Web Consultant</td>
+                                        <td>Oct 25th, 2014</td>
+                                        <td>Oct 25th, 2015</td>
+                                        <td class="text-center">
+                                            <span class="label label-success">Finish</span>
+                                        </td>
+                                        <td class="faq-table-btn">
+                                            <button type="button" class="btn btn-primary waves-effect waves-light"  onclick="location.href='@Url.Action("Index","Employee")'" data-toggle="tooltip" data-placement="top" title="Edit">
+                                                <i class="icofont icofont-ui-edit"></i>
+                                            </button> 
+                                            <button type="button" class="btn btn-danger waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="Delete">
+                                                <i class="icofont icofont-ui-delete"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/images/avatar-2.png" class="img-circle" alt="tbl">
+                                        </td>
+                                        <td>Web Consultant</td>
+                                        <td>Oct 25th, 2014</td>
+                                        <td>Oct 25th, 2015</td>
+                                        <td class="text-center">
+                                            <span class="label label-warning">Pending</span>
+                                        </td>
+                                        <td class="faq-table-btn">
+                                            <button type="button" class="btn btn-primary waves-effect waves-light"  onclick="location.href='@Url.Action("Index","Employee")'" data-toggle="tooltip" data-placement="top" title="Edit">
+                                                <i class="icofont icofont-ui-edit"></i>
+                                            </button> 
+                                            <button type="button" class="btn btn-danger waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="Delete">
+                                                <i class="icofont icofont-ui-delete"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/images/avatar-2.png" class="img-circle" alt="tbl">
+                                        </td>
+                                        <td>Web Consultant</td>
+                                        <td>Oct 25th, 2014</td>
+                                        <td>Oct 25th, 2015</td>
+                                        <td class="text-center"><span class="label label-success">Finish</span></td>
+                                        <td class="faq-table-btn">
+                                            <button type="button" class="btn btn-primary waves-effect waves-light"  onclick="location.href='@Url.Action("Index","Employee")'" data-toggle="tooltip" data-placement="top" title="Edit">
+                                                <i class="icofont icofont-ui-edit"></i>
+                                            </button> 
+                                            <button type="button" class="btn btn-danger waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="Delete">
+                                                <i class="icofont icofont-ui-delete"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/images/avatar-2.png" class="img-circle" alt="tbl">
+                                        </td>
+                                        <td>Web Consultant</td>
+                                        <td>Oct 25th, 2014</td>
+                                        <td>Oct 25th, 2015</td>
+                                        <td class="text-center"><span class="label label-danger">cancel</span></td>
+                                        <td class="faq-table-btn">
+                                            <button type="button" class="btn btn-primary waves-effect waves-light"  onclick="location.href='@Url.Action("Index","Employee")'" data-toggle="tooltip" data-placement="top" title="Edit">
+                                                <i class="icofont icofont-ui-edit"></i>
+                                            </button> 
+                                            <button type="button" class="btn btn-danger waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="Delete">
+                                                <i class="icofont icofont-ui-delete"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <!-- end of table -->
+                        </div>
+                        <!-- end of table responsive -->
+                    </div>
+                    <!-- end of project table -->
+                </div>
+                <!-- end of col-lg-12 -->
+            </div>
+            <!-- end of row -->
+        </div>
+        <!-- end of card-main -->
+    </div>
+    <!-- end of project pane -->
+
+</div>
